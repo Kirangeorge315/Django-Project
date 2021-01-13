@@ -1,0 +1,17 @@
+<html>
+ <head>
+   <title>3rd model application</title>
+ </head>
+ <body>
+   <h1><u>Customer Details</u></h1>
+       {% for x in Cust %}
+
+         <h2>Name:{{x.name}}</h2>
+         <h2>Age:{{x.age}}</h2>
+         <h2>Mail:{{x.mail}}</h2>
+         <h2>Phone:{{x.ph}}</h2>
+         <hr/>
+
+       {% endfor %}
+ </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/auth1.css"%}">
+</head>
+<body>
+    <nav class='navbar navbar-default navbar-inverse'>
+        <div class ="container" align="center">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/home">PENTAGONSPACE ENTRANCE TEST</a>
+            </div>
+            <ul class='nav navbar-nav'>
+                <li><a href="/java">JAVA EXAMS</a></li>
+                <li><a href="/python">PYTHON EXAMS</a></li>
+                <li><a href="/aptitude">APTITUDE EXAMS</a></li>
+            </ul>
+            <ul class='nav navbar-nav navbar-right'>
+                <li><a href="/signup">Signup</a></li>
+                <li><a href="/accounts/login/">Login</a></li>
+                <li><a href="/accounts/logout/">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    {%block for_child%}
+    {%endblock%}   
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB Project</title>
+</head>
+  <body>
+    <h1><u> Database Information</u></h1>
+    {% for x in emp %}
+    <h2>Number:{{x.number}}</h2>
+    <h2>Name:{{x.name}}</h2>
+    <h2>Marks:{{x.marks}}</h2>
+    <hr>
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{%extends 'myApp/parent.html'%}
+<html lang="en" dir="ltr">
+    <body>
+      {%block for_child%}
+      <h1 style="color:red" >List of HODs</h1>
+      {%for i in hod_list%}
+        <h2><a href="/{{i.id}}" >{{i.name}}</a></h2><br>     
+      {%endfor%}
+      {%endblock%}
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{%extends 'myApp/parent.html'%}
+<html lang="en" dir="ltr">
+<body>
+    {%block for_child%}
+    <h1>Delete the record {{student.name}}?</h1>
+    <form class="" method="post">
+      {%csrf_token%}
+      <input type="submit" class="btn btn-danger" name="" value="Delete"><br><br>
+      <a href="/{{student.id}}" class="btn btn-success">cancel</a>
+    </form>
+      {%endblock%}
+    
+</body>
+</html>

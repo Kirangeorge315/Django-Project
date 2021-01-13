@@ -1,0 +1,18 @@
+
+<html>
+  <head>
+    <title>2nd model application</title>
+  </head>
+  <body>
+    <h1><u>Employee Details</u></h1>
+       {%for x in emp %}
+          <h4>Id:{{x.eid}}</h4>
+          <h4>Name:{{x.ename}}</h4>
+          <h4>Designation:{{x.edesig}}</h4>
+          <h4>DOB:{{x.edob}}</h4>
+          <h4>Experience:{{x.eexp}}</h4>
+          <h4>Salary:{{x.esal}}</h4>
+          <hr/>
+       {%endfor%}
+  </body>
+</html>
